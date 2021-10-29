@@ -1,11 +1,18 @@
-import TicTacToe from './model';
+import Model from './model';
 import View from './view';
 
 class Controller {
   constructor() {
-    this.model = new TicTacToe();
+    this.model = new Model();
     this.view = new View();
 
+    this.view.restartEvent.addListener(() => {
+      document.querySelector('.board').remove();
+      document.querySelector('.message').remove();
+
+      const app = new Controller();
+      app.run();
+    });
     this.view.playEvent.addListener(move => {
       this.model.play(move);
     });

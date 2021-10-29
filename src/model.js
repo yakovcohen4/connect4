@@ -1,6 +1,6 @@
 import Event from './event';
 
-class TicTacToe {
+class Model {
   constructor() {
     this.board = Array(49).fill();
     this.currentPlayer = 'blue';
@@ -12,7 +12,9 @@ class TicTacToe {
   }
 
   play(move) {
+    console.log('yakov');
     if (this.finished || move < 0 || move > 48 || this.board[move]) {
+      console.log('in the play if ');
       return false;
     }
 
@@ -150,4 +152,4 @@ class TicTacToe {
   }
 }
 
-export default TicTacToe;
+export default Model;

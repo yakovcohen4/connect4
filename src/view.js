@@ -3,6 +3,7 @@ import Event from './event';
 class View {
   constructor() {
     this.playEvent = new Event();
+    this.restartEvent = new Event();
   }
 
   render() {
@@ -25,7 +26,6 @@ class View {
       });
 
     this.message = document.createElement('div');
-    this.message.className = 'message';
 
     document.body.appendChild(board);
     document.body.appendChild(this.message);
@@ -36,11 +36,27 @@ class View {
   }
 
   victory(winner) {
-    this.message.innerHTML = `${winner} wins!`;
+    this.message.className = 'message';
+    this.message.style.color = winner;
+    this.message.textContent = `The ${winner} wins!`;
+
+    this.restart();
   }
 
   draw() {
-    this.message.innerHTML = "It's a draw!";
+    this.message.textContent = "It's a draw!";
+    this.restart();
+  }
+
+  restart() {
+    const btn = document.createElement('button');
+    btn.className = 'close-container';
+    btn.textContent = 'Play Again';
+    btn.addEventListener('click', () => {
+      this.restartEvent.trigger();
+    });
+
+    this.message.appendChild(btn);
   }
 }
 
