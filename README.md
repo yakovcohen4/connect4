@@ -1,45 +1,15 @@
-# MVC
+# Task Connect Four
 
-## Topics
+## Connect Four is a two-player connection board game.
 
-- **(Model-View-Controller)** is a pattern in software design commonly used to implement user interfaces, data, and controlling logic.
+![Example](https://www.gophersport.com/cmsstatic/img/245/G-11048-PopularBoardGames-ce-2-clean.jpg?medium)
 
-- **Model**
-  The model defines what data the app should contain.
-- **View**
-  The view defines how the app's data should be displayed.
-- **Controller**
-  The controller contains logic that updates the model and/or view in response to input from the users of the app.
-- **Pros and Cons**
+### In this game, the players choose a color (blue, red) and then take turns dropping colored discs into a 7-column, 7-row vertically suspended grid. The pieces fall straight down, occupying the lowest available space within the column.
 
-  ![alt text](https://api.techiio.com/file/blog/479961c5fd168069e93f22288f8d314b.png 'MVC')
+### The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own discs. If the board fills up before either player achieves four in a row, then the game is a draw.
 
-## Resources
+### In this task I made a game board Conncet Four using (Model-View-Controller).
 
-[MDN](https://developer.mozilla.org/en-US/docs/Glossary/MVC)
+### The first player will start with the blue color and the second player starts with the red color.
 
-[Youtube](https://www.youtube.com/watch?v=DUg2SWWK18I)
-
-[TicTacToe](https://hackernoon.com/writing-a-simple-mvc-model-view-controller-app-in-vanilla-javascript-u65i34lx)
-
-## Task
-
-#### EndGoal - Build a game that will implement the MVC format.
-
-- The game will be built without a server - only on the client side (frontEnd)
-- The default game we recommend to build is "connect 4".
-  [Demo](https://connect-4.org/)
-  [Wikipedia](https://en.wikipedia.org/wiki/Connect_Four)
-- You may request to build another game and build it with the approval of one of the teachers
-- Please use the code written in the class and the attached resources to get inspired and implement the mvc architecture.
-- M for Model - Game's Data
-- V for View - Game's display and user interaction.
-- C for Controller - Game's logic, receiving messages from the View and changing the Model following the messages.
-  After changing the Model return the information to the View in order to present the information in the latest form to the user.
-- The board size will be 7X7.
-- At this stage of the exercise we would like to see functionality, Please deploy the project to GitHub pages.
-- There is no need to keep information about the players other than the color they are playing with.
-- A peek into the future - In the near future we will want to connect the front to a server to develop a game that is managed in a healthy way not on the client side
-- Please submit a blank project in a new repo to the Classroom when you have finished going through the information sources - so we know you have started working,
-- Submit once more when project is ready and uploaded to github pages
-  Have fun!
+# Have fun!
