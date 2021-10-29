@@ -1,0 +1,38 @@
+body {
+  background-color: lightpink;
+  background-image: linear-gradient(to right, #f1b1b1, #82e6e8);
+  display: grid;
+}
+.board {
+  margin-left: 30%;
+  margin-right: 30%;
+  display: grid;
+  width: 490px;
+  height: 490px;
+  grid-template-rows: 70px 70px 70px 70px 70px 70px 70px;
+  grid-template-columns: 70px 70px 70px 70px 70px 70px 70px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background: teal;
+  color: red;
+}
+
+.cell {
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: antiquewhite;
+}
+
+.message {
+  width: 300px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
